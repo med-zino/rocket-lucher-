@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <title>Rocket </title>
+</head>
+<body>
+    <div class="scene">
+                    <H3>THIS ANIMATION WAS CREATED TP PREPARE FOR THE TEST</H3>
+        <div class="rocket">
+           
+            <img src="rocket pic.png" id="Rocket01">
+        </div>
+    </div>
+    
+
+    
+</body>
+<script>
+     function stars() {
+        let cont = 50;
+        let scene = document.querySelector('.scene');
+        let i = 0;
+        while (i<cont) {
+            let star = document.createElement ('i');
+            let X = Math.floor(Math.random() * window.innerWidth);
+            let duration = Math.random() * 1;
+            let h = Math.random() * 100;
+
+
+            star.style.left = X + 'px';
+            star.style.width = 1 + 'px';
+            star.style.height = h + 'px';
+            star.style.animationDuration = duration + 's';
+
+
+
+            scene.appendChild(star) ;
+            i++
+        }
+    
+    }
+    stars()
+</script>
+</html>
